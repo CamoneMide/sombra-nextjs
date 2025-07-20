@@ -5,7 +5,7 @@ import { BlurText, FadeUp, ScrollDownButton } from "../animations";
 
 const Hero = () => {
   return (
-    <div className="bgGradient h-[535px] md:h-[785px] lg:h-[120vh] lg:max-h-[940px] flex flex-col items-center pt-[80px] px-[40px] relative">
+    <div className="bgGradient h-[535px] md:h-[785px] lg:h-[200vh] lg:max-h-[940px] flex flex-col items-center pt-[80px] px-[40px] relative">
       <Container>
         <div className="flex flex-col items-center text-center w-full mx-auto">
           <FadeUp
