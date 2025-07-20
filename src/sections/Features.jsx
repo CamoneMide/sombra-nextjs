@@ -6,7 +6,12 @@ import gridImg2 from "../../public/grid-boxImg02.png";
 import gridImg3 from "../../public/grid-boxImg03.png";
 import astroImg1 from "../../public/astroPulse.svg";
 import Link from "next/link";
-import { FadeUp, ScrollerEndl, TiltUp } from "../animations";
+import {
+  FadeUp,
+  ScrollerEndl,
+  ScrollerEndlessIcons,
+  TiltUp,
+} from "../animations";
 import { GiSparkles } from "react-icons/gi";
 import {
   SiAsana,
@@ -136,192 +141,225 @@ const Features = () => {
                   </p>
                 </div>
                 <div className="space-y-[10px]">
-                  <ScrollerEndl direction="left" baseSpeed={60}>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiDiscord size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiDropbox size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiBehance size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiNotion size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiSoundcloud size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiAsana size={50} />
-                    </div>
+                  <div className="flex w-full overflow-hidden">
+                    <ScrollerEndlessIcons
+                      direction="left"
+                      baseSpeed={60}
+                      pauseOnHover={true}
+                    >
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiDiscord size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiDropbox size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiBehance size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiNotion size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiSoundcloud size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiAsana size={50} />
+                      </div>
 
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiDiscord size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiDropbox size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiBehance size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiNotion size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiSoundcloud size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiAsana size={50} />
-                    </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiDiscord size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiDropbox size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiBehance size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiNotion size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiSoundcloud size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiAsana size={50} />
+                      </div>
 
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiDiscord size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiDropbox size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiBehance size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiNotion size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiSoundcloud size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiAsana size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiDiscord size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiDropbox size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiBehance size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiNotion size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiSoundcloud size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiAsana size={50} />
-                    </div>
-                  </ScrollerEndl>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiDiscord size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiDropbox size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiBehance size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiNotion size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiSoundcloud size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiAsana size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiDiscord size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiDropbox size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiBehance size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiNotion size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiSoundcloud size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiAsana size={50} />
+                      </div>
+                    </ScrollerEndlessIcons>
+                  </div>
 
-                  <ScrollerEndl direction="right" baseSpeed={60}>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiGithub size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiSpotify size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiSlack size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiFramer size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <GiSparkles size={50} />
-                    </div>
+                  <div className="flex w-full overflow-hidden">
+                    <ScrollerEndlessIcons
+                      direction="right"
+                      baseSpeed={55}
+                      pauseOnHover={true}
+                    >
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiGithub size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiSpotify size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiSlack size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiFramer size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <GiSparkles size={50} />
+                      </div>
 
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiGithub size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiSpotify size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiSlack size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiFramer size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <GiSparkles size={50} />
-                    </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiGithub size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiSpotify size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiSlack size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiFramer size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <GiSparkles size={50} />
+                      </div>
 
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiGithub size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiSpotify size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiSlack size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiFramer size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <GiSparkles size={50} />
-                    </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiGithub size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiSpotify size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiSlack size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiFramer size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <GiSparkles size={50} />
+                      </div>
 
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiGithub size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiSpotify size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiSlack size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <SiFramer size={50} />
-                    </div>
-                    <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
-                      <div className="absolute inset-0 bgGradientIcons"></div>
-                      <GiSparkles size={50} />
-                    </div>
-                  </ScrollerEndl>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiGithub size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiSpotify size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiSlack size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiFramer size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <GiSparkles size={50} />
+                      </div>
+
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiGithub size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiSpotify size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiSlack size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <SiFramer size={50} />
+                      </div>
+                      <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
+                        <div className="absolute inset-0 bgGradientIcons"></div>
+                        <GiSparkles size={50} />
+                      </div>
+                    </ScrollerEndlessIcons>
+                  </div>
                 </div>
               </div>
             </TiltUp>

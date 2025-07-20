@@ -5,7 +5,7 @@ import { BlurText, FadeUp, ScrollDownButton } from "../animations";
 
 const Hero = () => {
   return (
-    <div className="bgGradient h-[62vh] md:h-[63vh] lg:h-[120vh] lg:max-h-[940px] flex flex-col items-center pt-[80px] px-[40px] relative">
+    <div className="bgGradient h-[535px] md:h-[785px] lg:h-[120vh] lg:max-h-[940px] flex flex-col items-center pt-[80px] px-[40px] relative">
       <Container>
         <div className="flex flex-col items-center text-center w-full mx-auto">
           <FadeUp
@@ -17,10 +17,20 @@ const Hero = () => {
             virtual reality
           </FadeUp>
 
-          <div className="text-[48px] md:text-[80px] lg:text-[100px] text-[#FFF] font-[700] w-[94%] md:w-[80%] lg:w-[60%] leading-[50px] md:leading-[80px] text-center relative lg:mr-[40px]">
-            <div className="absolute top-0 left-0 lg:left-[13%]">
+          <div className="text-[44px] md:text-[80px] lg:text-[100px] text-[#FFF] font-[700] w-[310px] md:w-[600px] lg:w-[720px] leading-[50px] md:leading-[80px] text-center relative lg:mr-[40px]">
+            {/* Normal */}
+            <div className="absolute block md:hidden top-0 left-0 p-0">
               <BlurText
-                text={`    An infinite    reality voyage`}
+                text={`   An infinite    reality voyage`}
+                delay={45}
+                animateBy="letters"
+                direction="bottom"
+              />
+            </div>
+            {/* md */}
+            <div className="absolute hidden md:block top-0 left-0 p-0">
+              <BlurText
+                text={`    An infinite     reality voyage`}
                 delay={45}
                 animateBy="letters"
                 direction="bottom"
