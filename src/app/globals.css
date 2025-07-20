@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
+html,
 body {
+  max-width: 100%;
   overflow-x: hidden;
 }
+
 .btnGradient {
   background: linear-gradient(rgb(15, 95, 255) 0%, rgb(0, 4, 109) 100%);
 }
