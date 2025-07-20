@@ -1,5 +1,6 @@
 "use client";
 import { HiOutlineChevronDoubleDown } from "react-icons/hi";
+import { motion } from "framer-motion";
 
 const ScrollDownButton = ({ targetId }) => {
   const scrollToSection = (elementId) => {
@@ -12,12 +13,28 @@ const ScrollDownButton = ({ targetId }) => {
   };
 
   return (
-    <div
-      className="text-[#FFF] absolute bottom-[40px] z-[2] animate-bounce cursor-pointer font-[700] bg-[rgba(0,0,0,0.05)]"
+    <motion.div
+      className="text-[#FFF] text-[24px] md:text-[30px] absolute bottom-[20px] md:bottom-[40px] z-[2] cursor-pointer font-[700] bg-[rgba(0,0,0,0.05)]"
       onClick={() => scrollToSection(targetId)}
+      // Animation properties
+      animate={{
+        y: [0, 10, 0], // Bounce effect
+      }}
+      transition={{
+        duration: 3,
+        repeat: Infinity,
+        ease: "easeInOut",
+      }}
+      whileHover={{
+        scale: 1.1,
+        transition: { duration: 0.2 },
+      }}
+      whileTap={{
+        scale: 0.9,
+      }}
     >
-      <HiOutlineChevronDoubleDown size={34} />
-    </div>
+      <HiOutlineChevronDoubleDown />
+    </motion.div>
   );
 };
 
