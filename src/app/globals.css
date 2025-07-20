@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+.btnGradient {
+  background: linear-gradient(rgb(15, 95, 255) 0%, rgb(0, 4, 109) 100%);
+}
+.bgGradient {
+  background: linear-gradient(180deg, #000000 0%, hsl(230, 100%, 11%) 100%);
+}
+.ptextGradient {
+  background: linear-gradient(
+    0deg,
+    rgb(147, 197, 253) 0%,
+    rgb(239, 246, 255) 53%
+  );
+  background-clip: text;
+  /* -webkit-background-clip: text; */
+  -webkit-text-fill-color: transparent;
+}
+
+/* Shadows */
+.rdShadow {
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 0.301094px 1.02372px -1.25px,
+    rgba(0, 0, 0, 0.16) 0px 1.14427px 3.89051px -2.5px,
+    rgba(0, 0, 0, 0.063) 0px 5px 17px -3.75px;
+}
+
+.gridBgGradient {
+  background: linear-gradient(225deg, #141414 0%, rgb(0, 0, 0) 100%);
+}
+.gridBgGradientBl {
+  background: linear-gradient(225deg, rgb(0, 33, 82) 0%, rgb(0, 0, 0) 100%);
+}
+.gridBgGradientWcs {
+  background: linear-gradient(225deg, rgb(3, 31, 73) 0%, rgb(0, 0, 0) 100%);
+}
+.gridBgGradientAccd {
+  background: linear-gradient(225deg, rgb(20, 20, 20) 0%, rgb(0, 0, 0) 100%);
+}
+.bgGradientIcons {
+  background: linear-gradient(180deg, transparent 0%, #000 100%);
+}
+
+.maskCont {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  place-items: center;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  opacity: 1;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgb(0, 0, 0) 12.5%,
+    rgb(0, 0, 0) 87.5%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgb(0, 0, 0) 12.5%,
+    rgb(0, 0, 0) 87.5%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  overflow: hidden;
+}
