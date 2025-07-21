@@ -41,9 +41,14 @@ const Hero = () => {
       </Container>
 
       <ScrollDownButton targetId="features" />
-      <div className="absolute bottom-0 w-[360px] h-[320px] md:w-[600px] md:h-[534px] lg:w-[762px] lg:h-[678px]">
+      <FadeUp
+        delay={0.1}
+        duration={0.8}
+        distance={40}
+        className="absolute bottom-0 w-[360px] h-[320px] md:w-[600px] md:h-[534px] lg:w-[762px] lg:h-[678px]"
+      >
         <Image src={heroImg} alt="hero-img" />
-      </div>
+      </FadeUp>
     </div>
   );
 };

@@ -31,7 +31,7 @@ const Features = () => {
     <div className="bg-[#000]" id="features">
       <div className="border-y-[1px] border-[rgba(255,255,255,0.2)] h-[120px] flex flex-col justify-center">
         <div className="w-full lg:w-[1000px] mx-auto py-[10px]">
-          <ScrollerEndl direction="left" baseSpeed={60} className="py-[30px]">
+          <ScrollerEndl direction="left" baseSpeed={65} className="py-[30px]">
             {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((item, index) => (
               <div key={index} className="h-[40px] flex items-center">
                 <Image src={astroImg1} alt={`item-${index + 1}`} />
@@ -56,11 +56,25 @@ const Features = () => {
           <div className="size-[200px]">
             <Image
               src={featGif}
-              alt="Features GIF"
-              unoptimized
-              className="object-cover size-full"
+              alt="Feature-Gif"
+              className="size-full object-cover"
             />
+            {/* <video
+              autoPlay
+              loop
+              muted
+              playsInline // Critical for iOS
+              poster="../../public/prism-roll.gif"
+              className="w-full h-auto object-cover"
+            >
+              <source
+                src="../../public/videos/prism-rollV1.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video> */}
           </div>
+
           <TiltUp distance={40} duration={0.8} delay={0.2} perspective={1700}>
             <p className="text-[18px] md:text-[20px] lg:text-[24px] text-center text-[#94A3B8] w-full md:w-[500px] lg:w-[600px] font-[500]">
               We, the pioneers of the virtual realm, rise with boundless
@@ -140,12 +154,15 @@ const Features = () => {
                     world
                   </p>
                 </div>
-                <div className="space-y-[10px]">
+                <div className="space-y-[10px] relative w-full overflow-hidden py-[10px]">
+                  <div className="absolute left-0 top-0 bottom-0 w-[40px] md:w-[80px] z-[8] bg-gradient-to-r from-[#020202] to-transparent pointer-events-none" />
                   <div className="flex w-full overflow-hidden">
                     <ScrollerEndlessIcons
                       direction="left"
                       baseSpeed={60}
                       pauseOnHover={true}
+                      colrRight="#020202"
+                      colrLeft="#0f0f0f"
                     >
                       <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
                         <div className="absolute inset-0 bgGradientIcons"></div>
@@ -253,6 +270,8 @@ const Features = () => {
                       direction="right"
                       baseSpeed={55}
                       pauseOnHover={true}
+                      colrRight="#020202"
+                      colrLeft="#0f0f0f"
                     >
                       <div className="flex items-center justify-center size-[80px] text-[#D8D8D8] border-[2px] border-[rgba(255,255,255,0.1)] rounded-[16px] relative overflow-hidden">
                         <div className="absolute inset-0 bgGradientIcons"></div>
@@ -360,6 +379,7 @@ const Features = () => {
                       </div>
                     </ScrollerEndlessIcons>
                   </div>
+                  <div className="absolute right-0 top-0 bottom-0 w-[40px] md:w-[80px] z-[8] bg-gradient-to-l from-[#0f0f0f] to-transparent pointer-events-none" />
                 </div>
               </div>
             </TiltUp>

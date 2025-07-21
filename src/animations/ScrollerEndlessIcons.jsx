@@ -9,6 +9,8 @@ const ScrollerEndlessIcons = ({
   baseSpeed = 50,
   className = "",
   pauseOnHover,
+  colrRight = "#000000",
+  colrLeft = "#000000",
 }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
@@ -74,7 +76,12 @@ const ScrollerEndlessIcons = ({
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Left fade effect */}
-      <div className="absolute left-0 top-0 bottom-0 w-[40px] md:w-[80px] z-[8] bg-gradient-to-r from-black to-transparent pointer-events-none" />
+      <div
+        className="absolute left-0 top-0 bottom-0 w-[40px] md:w-[80px] z-[8] pointer-events-none"
+        style={{
+          background: `linear-gradient(to right, ${colrRight}, transparent)`,
+        }}
+      />
 
       {/* Scrolling content */}
       <motion.div ref={scrollerRef} className="flex w-max" style={{ x }}>
@@ -89,7 +96,12 @@ const ScrollerEndlessIcons = ({
       </motion.div>
 
       {/* Right fade effect */}
-      <div className="absolute right-0 top-0 bottom-0 w-[40px] md:w-[80px] z-[8] bg-gradient-to-l from-black to-transparent pointer-events-none" />
+      <div
+        className="absolute right-0 top-0 bottom-0 w-[40px] md:w-[80px] z-[8] pointer-events-none"
+        style={{
+          background: `linear-gradient(to left, ${colrLeft}, transparent)`,
+        }}
+      />
     </div>
   );
 };
