@@ -54,13 +54,13 @@ const WhatCustomerSay = () => {
 
               <ScrollerEndl
                 direction="left"
-                baseSpeed={60}
+                baseSpeed={40}
                 className="py-[30px]"
               >
                 {testimonies.map((testimony) => (
                   <div
                     key={testimony.id}
-                    className="flex flex-col w-[400px] p-[30px] pb-[40px] gap-[30px] border-[1px] border-[rgba(255,255,255,0.1)] rounded-[16px] gridBgGradientAccd"
+                    className="flex flex-col w-full max-w-[360px] md:max-w-[400px] p-[30px] pb-[40px] gap-[30px] border-[1px] border-[rgba(255,255,255,0.1)] rounded-[16px] gridBgGradientAccd"
                   >
                     <div className="text-[16px] text-[#94A3BB] font-[400]">
                       {testimony.text}
@@ -87,7 +87,7 @@ const WhatCustomerSay = () => {
                 {testimonies.map((testimony) => (
                   <div
                     key={testimony.id}
-                    className="flex flex-col w-[400px] p-[30px] pb-[40px] gap-[30px] border-[1px] border-[rgba(255,255,255,0.1)] rounded-[16px] gridBgGradientAccd"
+                    className="flex flex-col w-full max-w-[360px] md:max-w-[400px] p-[30px] pb-[40px] gap-[30px] border-[1px] border-[rgba(255,255,255,0.1)] rounded-[16px] gridBgGradientAccd"
                   >
                     <div className="text-[16px] text-[#94A3BB] font-[400]">
                       {testimony.text}
@@ -114,7 +114,7 @@ const WhatCustomerSay = () => {
                 {testimonies.map((testimony) => (
                   <div
                     key={testimony.id}
-                    className="flex flex-col w-[400px] p-[30px] pb-[40px] gap-[30px] border-[1px] border-[rgba(255,255,255,0.1)] rounded-[16px] gridBgGradientAccd"
+                    className="flex flex-col w-full max-w-[360px] md:max-w-[400px] p-[30px] pb-[40px] gap-[30px] border-[1px] border-[rgba(255,255,255,0.1)] rounded-[16px] gridBgGradientAccd"
                   >
                     <div className="text-[16px] text-[#94A3BB] font-[400]">
                       {testimony.text}
@@ -141,7 +141,7 @@ const WhatCustomerSay = () => {
                 {testimonies.map((testimony) => (
                   <div
                     key={testimony.id}
-                    className="flex flex-col w-[400px] p-[30px] pb-[40px] gap-[30px] border-[1px] border-[rgba(255,255,255,0.1)] rounded-[16px] gridBgGradientAccd"
+                    className="flex flex-col w-full max-w-[360px] md:max-w-[400px] p-[30px] pb-[40px] gap-[30px] border-[1px] border-[rgba(255,255,255,0.1)] rounded-[16px] gridBgGradientAccd"
                   >
                     <div className="text-[16px] text-[#94A3BB] font-[400]">
                       {testimony.text}
@@ -168,7 +168,7 @@ const WhatCustomerSay = () => {
                 {testimonies.map((testimony) => (
                   <div
                     key={testimony.id}
-                    className="flex flex-col w-[400px] p-[30px] pb-[40px] gap-[30px] border-[1px] border-[rgba(255,255,255,0.1)] rounded-[16px] gridBgGradientAccd"
+                    className="flex flex-col w-full max-w-[360px] md:max-w-[400px] p-[30px] pb-[40px] gap-[30px] border-[1px] border-[rgba(255,255,255,0.1)] rounded-[16px] gridBgGradientAccd"
                   >
                     <div className="text-[16px] text-[#94A3BB] font-[400]">
                       {testimony.text}
@@ -195,7 +195,7 @@ const WhatCustomerSay = () => {
                 {testimonies.map((testimony) => (
                   <div
                     key={testimony.id}
-                    className="flex flex-col w-[400px] p-[30px] pb-[40px] gap-[30px] border-[1px] border-[rgba(255,255,255,0.1)] rounded-[16px] gridBgGradientAccd"
+                    className="flex flex-col w-full max-w-[360px] md:max-w-[400px] p-[30px] pb-[40px] gap-[30px] border-[1px] border-[rgba(255,255,255,0.1)] rounded-[16px] gridBgGradientAccd"
                   >
                     <div className="text-[16px] text-[#94A3BB] font-[400]">
                       {testimony.text}

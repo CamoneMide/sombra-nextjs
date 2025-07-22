@@ -14,7 +14,8 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="bg-[#000] h-[64px] lg:h-[80px] flex flex-col justify-center sticky top-0 z-10">
+      <div className="h-[64px] lg:h-[80px] w-full" />
+      <div className="bg-[#000] w-full h-[64px] lg:h-[80px] flex flex-col justify-center fixed top-0 z-50">
         <Container>
           <nav className="flex flex-row justify-between items-center">
             <Link href="/" className="keychainify-checked">

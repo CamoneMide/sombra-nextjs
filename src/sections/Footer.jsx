@@ -15,7 +15,7 @@ const Footer = () => {
       <section className="bg-[#000] border-t-[1px] border-t-[rgba(255,255,255,0.2)]">
         <Container
           className={
-            "mx-[40px] py-[40px] md:py-[60px] md:mx-[30px] lg:mx-[40px] flex flex-col md:flex-row md:justify-evenly gap-[40px]"
+            "mx-[40px] py-[40px] md:py-[60px] md:mx-[30px] lg:mx-auto flex flex-col md:flex-row md:justify-evenly gap-[40px]"
           }
         >
           <div className="flex flex-col gap-[16px] w-[80%] md:w-[220px] lg:w-[300px]">

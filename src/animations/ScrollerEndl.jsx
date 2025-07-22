@@ -69,7 +69,7 @@ const ScrollerEndl = ({
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Left fade effect */}
-      <div className="absolute left-0 top-0 bottom-0 w-[60px] md:w-[120px] z-[8] bg-gradient-to-r from-black to-transparent pointer-events-none" />
+      <div className="absolute left-0 top-0 bottom-0 w-[50px] md:w-[120px] z-[8] bg-gradient-to-r from-black to-transparent pointer-events-none" />
 
       {/* Scrolling content */}
       <motion.div ref={scrollerRef} className="flex w-max" style={{ x }}>
@@ -84,7 +84,7 @@ const ScrollerEndl = ({
       </motion.div>
 
       {/* Right fade effect */}
-      <div className="absolute right-0 top-0 bottom-0 w-[60px] md:w-[120px] z-[8] bg-gradient-to-l from-black to-transparent pointer-events-none" />
+      <div className="absolute right-0 top-0 bottom-0 w-[50px] md:w-[120px] z-[8] bg-gradient-to-l from-black to-transparent pointer-events-none" />
     </div>
   );
 };

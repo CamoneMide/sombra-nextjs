@@ -11,7 +11,7 @@ const FAQSect = () => {
               <h4 className="text-[12px] md:text-[14px] text-[#2563EB] uppercase tracking-[0.3em] font-[700] mt-[20px] md:mt-0">
                 FAQ
               </h4>
-              <h1 className="text-[28px] md:text-[40px] lg:text-[48px] text-transparent ptextGradient font-[700] w-full lg:w-[80%] whitespace-nowrap">
+              <h1 className="text-[28px] md:text-[40px] lg:text-[48px] text-transparent ptextGradient font-[700] w-[92%] lg:w-[80%] leading-[100%]">
                 Frequently asked questions
               </h1>
               <p className="text-[16px] lg:text-[18px] text-[#94A3BB] text-center font-[500] w-full lg:w-[80%]">
